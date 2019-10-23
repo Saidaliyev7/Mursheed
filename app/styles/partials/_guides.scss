@@ -1,3 +1,86 @@
 @import 'guides/_header';
 @import 'guides/_content';
 @import 'guides/_footer';
+
+
+
+.content-box-left{
+    // width: 263px;
+    // height: 651px;
+    // border-radius: 4px;
+    // background-color: #f7f7f7;
+  
+    &__up{
+      width: 263px;
+      height: 82px;
+      border-radius: 4px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+      border: solid 1px #0b8071;
+      background-color: #ffffff;
+  
+      .form-check{
+  
+        .form-check-input {
+          width: 16px;
+          height: 16px;
+          border: solid 1px #0b8071;
+        }
+        .form-check-label{
+          width: 44px;
+          height: 16px;
+          font-family: Averta;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          color: #000000;
+        }
+      }
+    }
+  
+    &__down{
+      width: 263px;
+      height: 651px;
+      border-radius: 4px;
+      background-color: #f7f7f7;
+      .card{
+        .card-header{
+          .header-text--left {
+            width: 47px;
+            height: 24px;
+            font-family: Averta;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+          }
+          .header-text--right {
+            width: 36px;
+            height: 20px;
+            font-family: Averta;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #0b8071;
+          }
+        }
+      }
+    }
+  }
+  
+  .content-box-right{
+    width: 848px;
+    height: 738px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+  
+  }
