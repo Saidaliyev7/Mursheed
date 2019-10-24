@@ -6,6 +6,9 @@ body,html{
    font-size: $font-size;
 }
 
+button{
+    outline: none;
+}
 a{
     text-decoration: none;
 }
@@ -17,6 +20,16 @@ ul{
 input,button,textarea{
     outline: none;
 }
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    & > [class^="col-"],
+    & > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -37,10 +50,18 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    // font-family: Averta;
 }
 
 body {
     line-height:1;
+}
+
+ul{
+    list-style: none;
+}
+input,button,textarea{
+    outline: none;
 }
 
 article,aside,details,figcaption,figure,
