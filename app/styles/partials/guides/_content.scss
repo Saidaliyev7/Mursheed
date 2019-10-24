@@ -48,153 +48,271 @@
   //   content
 
 
-//   right table
-.table.table-filter{
-    // tbody
-    tbody{
-        tr{
-            td{
+  //   right table
+  .card {
+    .card-header {
+      &__title {
+        width: 99px;
+        height: 24px;
+        font-family: Averta;
+        font-size: 20px;
+      }
 
-                border: 0;
-                .media{
+      // custom select
+      /*the container must be positioned relative:*/
+      .custom-select {
+        position: relative;
+        font-family: Averta;
+        width: 160px;
+        height: 36px;
+        background-color: #f7f7f7;
+      }
 
-                    border-radius: 3px;
-                    padding-bottom: .5rem!important;
-                    line-height: 1.1rem!important;
-                    &__img{
-                        width: 102px;
-                        height: 102px;
-                        object-fit: contain;
-                        border-radius: 2px;
-                    }
-                    &-body{
+      .custom-select select {
+        display: none;
+        /*hide original SELECT element:*/
+      }
 
-                        &__left{
+      .select-selected {
+        background-color: #f7f7f7;
+      }
 
-                            padding-left: .80rem!important;
+      /*style the arrow inside the select element:*/
+      .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+      }
 
-                            ul{
-                                li{
-                                    padding-bottom: .35rem!important;
-                                    .busy-avaiable-button{
+      /*point the arrow upwards when the select box is open (active):*/
+      .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+      }
 
-                                        .title {
-                                          width: 164px;
-                                          height: 24px;
-                                          font-size: 20px;
-                                          font-weight: 600;
-                                          color: $black;
-                                          font-family: $font-family;
-                                          font-stretch: normal;
-                                          font-style: normal;
-                                          line-height: 1.4rem!important;
-                                          letter-spacing: normal;
-                                          padding-bottom: .25rem!important;
-                                        }
-                                        .times-tour{
-                                            width: 103px;
-                                          height: 20px;
-                                          font-size: $font-size;
-                                          font-family: $font-family;
+      /*style the items (options), including the selected item:*/
+      .select-items div,
+      .select-selected {
+        // color: #ffffff;
+        // padding: 8px 16px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+        user-select: none;
         
-                                          font-weight: normal;
-                                          color: $black;
-                                          font-stretch: normal;
-                                          font-style: normal;
-                                          line-height: normal;
-                                          letter-spacing: normal;
-                                        }
-                                        .countries{
-                                            width: 253px;
-                                            height: 20px;
-                                            font-size: $font-size;
-                                            font-family: $font-family;
-                                            font-weight: normal;
-                                            color: $black;
-                                            font-stretch: normal;
-                                            font-style: normal;
-                                            line-height: normal;
-                                            letter-spacing: normal;
-                                        }
-                                        .busy-avaiable-button{
-                                            line-height: 2.3rem!important
-                                        }
-                                        .busy-or-avaiable{
-                                            width: 80px;
-                                            height: 20px;
-                                            font-size: 13px;
-                                            line-height: normal;
-                                            border-radius: 2px;
-                                            color: #ffffff;
-                                            outline: none;
-                                        }
-                                        .busy{
-                                            background-color: #b73838;
-                                        }
-                                        .avaiable{
-                                            background-color: #38b77b;
-                                        }
-        
-                                        .user{
-                                            font-size: 19px;
-                                            color: $deep-aqua;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+        // border-radius: 4px;
+        // border: solid 1px #dfdfdf;
+        outline: none;
+        // background-color: #f7f7f7;
+        font-size: 16px;
+        color: #666666;
+      }
 
-                        &__right{
-                            &__area{
-                                ul{
-                                    li{
-                                        padding-bottom: .35rem!important;
-                                        .ratings{
-                                            font-size: 12px;
-                                            .checked{
-                                                color: orange;
-                                            }
-                                        }
-                                        .ratings-count{
-                                            font-size: 10px;
-                                        }
-                                        
-                                        .details__hire {
-                                            width: 120px;
-                                            height: 29px;
-                                            font-size: 16px;
-                                            font-weight: bold;
-                                            text-align: center;
-                                            font-family: $font-family;
-                                            font-stretch: normal;
-                                            font-style: normal;
-                                            line-height: normal;
-                                            letter-spacing: normal;
-          
-                                            border: 0;
-                                            border-radius: 3px;
-                                          }
-                                          .details{
-                                              color: $deep-aqua;
-                                              background-color: #ffffff;
-                                              border: 1px solid;
-                                          }
-                                          .hire{
-                                              color: #ffffff;
-                                              background-color: $deep-aqua;
-          
-                                          }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      /*style items (options):*/
+      .select-items {
+        position: absolute;
+        background-color: #f7f7f7;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        border: 1px #f7f7f7;
+        padding: 8px 16px;
+      }
+
+      /*hide the items when the select box is closed:*/
+      .select-hide {
+        display: none;
+      }
+
+      .select-items div:hover,
+      .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      // &__select{
+
+      //     // width: 160px;
+      //     // height: 36px;
+      //     // border-radius: 4px;
+      //     // border: solid 1px #dfdfdf;
+      //     // outline: none;
+      //     // background-color: #f7f7f7;
+      //     // font-size: 16px;
+      //     // color: #666666;
+      // }
     }
-}
 
+    .card-body {
+      .table.table-filter {
+
+        // tbody
+        tbody {
+          tr {
+            td {
+
+              border: 0;
+
+              .media {
+
+                border-radius: 3px;
+                padding-bottom: .5rem !important;
+                line-height: 1.1rem !important;
+
+                &__img {
+                  width: 102px;
+                  height: 102px;
+                  object-fit: contain;
+                  border-radius: 2px;
+                }
+
+                &-body {
+
+                  &__left {
+
+                    padding-left: .80rem !important;
+
+                    ul {
+                      li {
+                        padding-bottom: .35rem !important;
+
+                        .busy-avaiable-button {
+
+                          .title {
+                            width: 164px;
+                            height: 24px;
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: $black;
+                            font-family: $font-family;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.4rem !important;
+                            letter-spacing: normal;
+                            padding-bottom: .25rem !important;
+                          }
+
+                          .times-tour {
+                            width: 103px;
+                            height: 20px;
+                            font-size: $font-size;
+                            font-family: $font-family;
+
+                            font-weight: normal;
+                            color: $black;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                          }
+
+                          .countries {
+                            width: 253px;
+                            height: 20px;
+                            font-size: $font-size;
+                            font-family: $font-family;
+                            font-weight: normal;
+                            color: $black;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                          }
+
+                          .busy-avaiable-button {
+                            line-height: 2.3rem !important
+                          }
+
+                          .busy-or-avaiable {
+                            width: 80px;
+                            height: 20px;
+                            font-size: 13px;
+                            line-height: normal;
+                            border-radius: 2px;
+                            color: #ffffff;
+                            outline: none;
+                          }
+
+                          .busy {
+                            background-color: #b73838;
+                          }
+
+                          .avaiable {
+                            background-color: #38b77b;
+                          }
+
+                          .user {
+                            font-size: 19px;
+                            color: $deep-aqua;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &__right {
+                    &__area {
+                      ul {
+                        li {
+                          padding-bottom: .35rem !important;
+
+                          .ratings {
+                            font-size: 12px;
+
+                            .checked {
+                              color: orange;
+                            }
+                          }
+
+                          .ratings-count {
+                            font-size: 10px;
+                          }
+
+                          .details__hire {
+                            width: 120px;
+                            height: 29px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-align: center;
+                            font-family: $font-family;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+
+                            border: 0;
+                            border-radius: 3px;
+                          }
+
+                          .details {
+                            color: $deep-aqua;
+                            background-color: #ffffff;
+                            border: 1px solid;
+                          }
+
+                          .hire {
+                            color: #ffffff;
+                            background-color: $deep-aqua;
+
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
 
 
 }
