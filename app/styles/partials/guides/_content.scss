@@ -2,6 +2,10 @@
 // @import '_typography';
 
 .content {
+
+    a{
+        text-decoration: none;
+    }
   width: 100%;
 
   .current-page {
@@ -67,6 +71,31 @@
         border-radius: 4px;
         .card-header{
             background-color: #f7f7f7;
+            .title{
+                width: 47px;
+                height: 24px;
+                font-family: Averta;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $black;
+            }
+            .reset{
+                width: 36px;
+                height: 20px;
+                font-family: Averta;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: $deep-aqua;
+            }
         }
         // .card-body{
 
