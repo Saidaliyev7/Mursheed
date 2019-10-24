@@ -97,9 +97,68 @@
                 color: $deep-aqua;
             }
         }
-        // .card-body{
+        .card-body{
 
-        // }
+            .guides-select-form{
+                ul{
+                    li {
+
+                        margin-bottom: 1rem!important;
+                        
+                        .select-area{
+                            border-bottom: 1px solid #dee2e6!important;
+                        }
+                      /*Select2 responsive*/
+                      .select2 {
+                        width: 100% !important;
+                        // height: 36px;
+                        // border: 4px;
+                        // border: solid 1px #dfdfdf;
+                      }
+
+                      .select2-selection {
+                        overflow: hidden;
+                      }
+
+                      .select2-selection__rendered {
+                        white-space: normal;
+                        word-break: break-all;
+                      }
+                      span.select2-selection.select2-selection--single {
+                        background-color: transparent;
+                        height: 36px;
+                        border-radius: 4px;
+                        border: solid 1px #dfdfdf;
+                      }
+
+                      .select2-selection__arrow{
+                          color: #dfdfdf;
+                      }
+                      span.select2-dropdown.select2-dropdown--above {
+                        background-color: #dfdfdf;
+                      }
+
+                      .select-title h5:first-child{
+                        width: 50px;
+                        height: 20px;
+                        font-family: $font-family;
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.25;
+                        letter-spacing: normal;
+                        color: $black;
+                      }
+                      .select-title h5:last-child{
+                        width: 15px;
+                        object-fit: contain;
+                        color: $deep-aqua;
+                      }
+                    }
+                }
+            }
+        }
     }
 }
 

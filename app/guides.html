@@ -18,6 +18,7 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link href="../bower_components/select2/dist/css/select2.min.css" rel="stylesheet" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -115,15 +116,68 @@
                         <div class="card-body">
                           <div class="guides-select-form">
                             <ul>
+                              <!-- by city -->
                               <li>
-                                  
-                                <label for="">By City</label>
-                                <select name="" id="">
-                                  <option value=""></option>
-                                  <option value=""></option>
-                                </select>
+                                <div class="select-area pb-3">
+                                    <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                        <h5>By city</h5>
+                                        <h5><i class="fas fa-minus"></i></h5>
+                                    </div>
+                                    <select class="select2-custom d-none" name="city">
+                                        <option value="">All cities</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                      </select>
+                                </div>
                               </li>
-                              
+                              <!-- by city -->
+
+                              <!-- by language -->
+                              <li>
+                                  <div class="select-area pb-3">
+                                      <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                          <h5>By </h5>
+                                          <h5><i class="fas fa-minus"></i></h5>
+                                      </div>
+                                      <select class="select2-custom d-none" name="city">
+                                          <option value="">All language</option>
+                                          <option value="AL">English</option>
+                                          <option value="WY">Azerbaijani</option>
+                                        </select>
+                                  </div>
+                                </li>
+                                <!-- by language -->
+
+                                <!-- by gender -->
+                                <li>
+                                  <div class="select-area pb-3">
+                                    <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                      <h5>By </h5>
+                                      <h5><i class="fas fa-minus"></i></h5>
+                                    </div>
+                                    <select class="select2-custom d-none" name="city">
+                                      <option value="">All gender</option>
+                                      <option value="AL">male</option>
+                                      <option value="WY">famele</option>
+                                    </select>
+                                  </div>
+                                </li>
+                                <!-- by gender -->
+                                <!-- by gender -->
+                                <li>
+                                    <div class="select-area pb-3">
+                                      <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                        <h5>By </h5>
+                                        <h5><i class="fas fa-minus"></i></h5>
+                                      </div>
+                                      <select class="select2-custom d-none" name="city">
+                                        <option value="">All</option>
+                                        <option value="AL">busy</option>
+                                        <option value="WY">avaiable</option>
+                                      </select>
+                                    </div>
+                                  </li>
+                                  <!-- by gender -->
                             </ul>
                           </div>
                         </div>
@@ -475,6 +529,8 @@
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/select2/dist/js/select2.min.js"></script>
+  <script src="scripts/custom_select.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
