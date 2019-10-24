@@ -47,6 +47,32 @@
 
   //   content
 
+//   left filter sidebar
+.radio-button-area{
+    .card{
+        border: 1px solid $deep-aqua;
+        width: 263px;
+        height: 82px;
+        border-radius: 4px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+    }
+}
+
+.filter-form{
+    .card{
+        background-color: #f7f7f7;
+        width: 263px;
+        height: 651px;
+        border-radius: 4px;
+        .card-header{
+            background-color: #f7f7f7;
+        }
+        // .card-body{
+
+        // }
+    }
+}
 
   //   right table
   .card {
