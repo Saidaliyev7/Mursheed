@@ -125,13 +125,15 @@
   }
 
   .filter-form {
+
     .card {
       background-color: $light;
       // width: 16.4375rem;
-      height: 40.870rem;
+      // height: 40.870rem;
       border-radius:$border-radius4px;
 
       form {
+
         .card-header {
           background-color: $light;
 
@@ -158,7 +160,9 @@
         .card-body {
 
           .guides-select-form {
+
             ul {
+
               li {
 
                 margin-bottom: 1rem !important;
@@ -228,7 +232,7 @@
   }
 
   //   right table
-  .card{
+  .card.right-area-table{
     
     border: 0!important;
     height: 46.125rem;
@@ -282,8 +286,11 @@
     }
 
     .card-body {
+
       .table-container{
-        .table.table-filter {
+
+        height: 100%;
+        .table{
           // tbody
           tbody {
             tr {
@@ -291,8 +298,9 @@
                 border: 0;
                 padding: 0;
                 .card{
-                  .card-body{
-                    padding: 0;
+                  .card-image > img{
+                    width: 6.375rem;
+                    height: 6.375rem;
                   }
                 }
   
@@ -305,33 +313,35 @@
             border-bottom: $border1px solid transparent !important;
           }
         }
-        // pagination
-        .pull-right {
-          .btn-group {
-            width: 15.5rem;
-            height: 1.875rem;
-            border-radius: 0.1875rem;
-            //   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
-            background-color: $light;
-      
-            .btn.btn-filter {
-              width: 1.875rem;
-              height: 1.875rem;
-              font-size: 0.75rem;
-              font-weight: bold;
-              text-align: center;
-              color: $black;
-              border-right: $border1px #e1e1e1;
-              outline: none;
-              color: #9d9b9b;
-            }
-          }
-        }
+        
       }
 
     }
 
 
+  }
+
+  // pagination
+  .pull-right {
+    .btn-group {
+      width: 15.5rem;
+      height: 1.875rem;
+      border-radius: 0.1875rem;
+      //   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+      background-color: $light;
+
+      .btn.btn-filter {
+        width: 1.875rem;
+        height: 1.875rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-align: center;
+        color: $black;
+        border-right: $border1px #e1e1e1;
+        outline: none;
+        color: #9d9b9b;
+      }
+    }
   }
 
   
