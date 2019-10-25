@@ -66,7 +66,8 @@
               ul{
                 li{
                   .radio{
-                    font-size: 24px;
+                    font-size: 1rem;
+                    line-height: 1;
                     font-weight: 500;
                     text-transform: capitalize;
                     display: inline-block;
@@ -85,21 +86,20 @@
                   }
       
                   .radio span{
-                    height: 1.25rem;
-                    width: 1.25rem;
+                    height: 1rem;
+                    width: 1rem;
                     border-radius: 50%;
                     border: 1px solid $deep-aqua;
                     display: block;
                     position: absolute;
                     left: 0;
-                    top: 0.25rem;
-      
+                    top: 0;
                   }
       
                   .radio span:after{
                     content: "";
-                    height: 0.875rem;
-                    width:  0.875rem;
+                    height: 0.625rem;
+                    width:  0.625rem;
                     background: $deep-aqua;
                     display: block;
                     position: absolute;
@@ -169,6 +169,7 @@
                         }
                       
                         // filter custom select
+
 
                       
 
