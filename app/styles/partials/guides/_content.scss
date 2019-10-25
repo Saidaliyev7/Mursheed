@@ -24,6 +24,8 @@
 }
 
 
+
+
 .content {
 
   a {
@@ -271,12 +273,11 @@
   }
 
   //   right table
-  .card {
+  .card{
     
     border: 0!important;
-    height: 47rem;
+    height: 46.125rem;
     background-color: #f7f7f7;
-
     .card-header {
       background-color: #f7f7f7;
       &__title {
@@ -333,13 +334,17 @@
     .card-body {
       .table-container{
         .table.table-filter {
-
           // tbody
           tbody {
             tr {
               td {
-  
                 border: 0;
+                padding: 0;
+                .card{
+                  .card-body{
+                    padding: 0;
+                  }
+                }
   
                 
               }
