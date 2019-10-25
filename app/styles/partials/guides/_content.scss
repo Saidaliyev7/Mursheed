@@ -3,9 +3,10 @@
 
 .content {
 
-    a{
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
+
   width: 100%;
 
   .current-page {
@@ -51,194 +52,204 @@
 
   //   content
 
-//   left filter sidebar
-.radio-button-area{
-    .card{
-        border: 1px solid $deep-aqua;
-        width: 263px;
-        height: 82px;
-        border-radius: 4px;
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
-        background-color: #ffffff;
-        .card-body{
-          .radio-group{
-            form{
-              ul{
-                li{
-                  .radio{
-                    font-size: 1rem;
-                    line-height: 1;
-                    font-weight: 500;
-                    text-transform: capitalize;
-                    display: inline-block;
-                    vertical-align: middle;
-                    color: $black;
-                    position: relative;
-                    padding-left: 30px;
-                    cursor: pointer;
-                  }
-      
-                  .radio + .radio{
-                    margin-left: 20px;
-                  }
-                  .radio input[type="radio"]{
-                    display:none;
-                  }
-      
-                  .radio span{
-                    height: 1rem;
-                    width: 1rem;
-                    border-radius: 50%;
-                    border: 1px solid $deep-aqua;
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                  }
-      
-                  .radio span:after{
-                    content: "";
-                    height: 0.625rem;
-                    width:  0.625rem;
-                    background: $deep-aqua;
-                    display: block;
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%,-50%) scale(0);
-                    border-radius: 50%;
-                    transition: 300ms ease-in-out 0s;
-      
-                  }
-      
-                  .radio input[type="radio"]:checked ~ span:after{
-                    transform: translate(-50%,-50%) scale(1);
-                  }
+  //   left filter sidebar
+  .radio-button-area {
+    .card {
+      border: 1px solid $deep-aqua;
+      width: 263px;
+      height: 82px;
+      border-radius: 4px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #ffffff;
+
+      .card-body {
+        .radio-group {
+          form {
+            ul {
+              li {
+                .radio {
+                  font-size: 1rem;
+                  line-height: 1;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  display: inline-block;
+                  vertical-align: middle;
+                  color: $black;
+                  position: relative;
+                  padding-left: 30px;
+                  cursor: pointer;
+                }
+
+                .radio+.radio {
+                  margin-left: 20px;
+                }
+
+                .radio input[type="radio"] {
+                  display: none;
+                }
+
+                .radio span {
+                  height: 1rem;
+                  width: 1rem;
+                  border-radius: 50%;
+                  border: 1px solid $deep-aqua;
+                  display: block;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                }
+
+                .radio span:after {
+                  content: "";
+                  height: 0.625rem;
+                  width: 0.625rem;
+                  background: $deep-aqua;
+                  display: block;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%) scale(0);
+                  border-radius: 50%;
+                  transition: 300ms ease-in-out 0s;
+
+                }
+
+                .radio input[type="radio"]:checked~span:after {
+                  transform: translate(-50%, -50%) scale(1);
                 }
               }
             }
           }
         }
+      }
     }
-}
+  }
 
-.filter-form{
-    .card{
-        background-color: #f7f7f7;
-        // width: 16.4375rem;
-        height: 40.870rem;
-        border-radius: 4px;
-        .card-header{
-            background-color: #f7f7f7;
-            .title{
-                width: 47px;
-                height: 24px;
-                font-family: Averta;
-                font-size: 20px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: $black;
-            }
-            .reset{
-                width: 36px;
-                height: 20px;
-                font-family: Averta;
-                font-size: 16px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: right;
-                color: $deep-aqua;
-            }
+  .filter-form {
+    .card {
+      background-color: #f7f7f7;
+      // width: 16.4375rem;
+      height: 40.870rem;
+      border-radius: 4px;
+
+      form {
+        .card-header {
+          background-color: #f7f7f7;
+
+          .title {
+            width: 47px;
+            height: 24px;
+            font-family: Averta;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $black;
+          }
+
+          .reset {
+            width: 36px;
+            height: 20px;
+            font-family: Averta;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: $deep-aqua;
+          }
         }
-        .card-body{
 
-            .guides-select-form{
-                ul{
-                    li {
+        .card-body {
 
-                        margin-bottom: 1rem!important;
-                        
-                        .select-area{
-                            border-bottom: 1px solid #dee2e6!important;
+          .guides-select-form {
+            ul {
+              li {
 
-                            .select-title h5:first-child{
-                              height:1.5rem ;
-                              font-family: Averta-Regular;
-                              font-size: 1rem;
-                              font-weight: normal;
-                              font-stretch: normal;
-                              font-style: normal;
-                              line-height: 1.25;
-                              letter-spacing: normal;
-                              color: $black;
-                            }
+                margin-bottom: 1rem !important;
 
-                            .select-title h5:last-child{
-                              color: $deep-aqua;
-                            }
-                        }
-                      
-                        // filter custom select
+                .select-area {
+                  border-bottom: 1px solid #dee2e6 !important;
 
-                        .custom-select__filter-sidebar{
-                          width: 100%;
-                          height: 2.25rem;
-                          border-radius:0.25rem;
-                          border: solid 1px #dfdfdf;
-                          position: relative;
-                          
-                          select{
-                            outline: none;
-                            width: 100%;
-                            height: 100%;
-                            border: 0;
-                            background: transparent;
-                            font-family: Averta;
-                            font-size: 1rem;
-                            padding: .25rem!important;
-                            font-weight: normal;
-                            font-stretch: normal;
-                            font-style: normal;
-                            line-height: normal;
-                            letter-spacing: normal;
-                            color: #666666;
-                            -webkit-appearance: none;
-                            -moz-appearance: none;
-                            appearance: none;
-                          }
-                        }
-                        .custom-select__filter-sidebar:after {
-                          content: "keyboard_arrow_down";
-                          font-family: "material icons";
-                          position: absolute;
-                          right: 0.625rem;
-                          top: 50%;
-                          font-size: 1rem;
-                          color: #000000;
-                          transform: translateY(-50%);
-                          pointer-events: none;
-                        }
+                  .select-title h5:first-child {
+                    height: 1.5rem;
+                    font-family: Averta-Regular;
+                    font-size: 1rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.25;
+                    letter-spacing: normal;
+                    color: $black;
+                  }
 
-                      
-
-                      
-                    }
+                  .select-title h5:last-child {
+                    color: $deep-aqua;
+                  }
                 }
+
+                // filter custom select
+
+                .custom-select__filter-sidebar {
+                  width: 100%;
+                  height: 2.25rem;
+                  border-radius: 0.25rem;
+                  border: solid 1px #dfdfdf;
+                  position: relative;
+
+                  select {
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                    background: transparent;
+                    font-family: Averta;
+                    font-size: 1rem;
+                    padding: .25rem !important;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #666666;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                  }
+                }
+
+                .custom-select__filter-sidebar:after {
+                  content: "keyboard_arrow_down";
+                  font-family: "material icons";
+                  position: absolute;
+                  right: 0.625rem;
+                  top: 50%;
+                  font-size: 1rem;
+                  color: #000000;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+                }
+
+
+
+
+              }
             }
+          }
         }
+      }
     }
-}
+  }
 
   //   right table
   .card {
     // width: 53rem;
     height: 47rem;
+
     .card-header {
       &__title {
         width: 99px;
@@ -248,15 +259,15 @@
       }
 
       // custom select
-      .custom-select__filter-table{
+      .custom-select__filter-table {
         width: 10rem;
         height: 2.25rem;
-        border-radius:0.25rem;
+        border-radius: 0.25rem;
         border: solid 1px #dfdfdf;
-        padding: .25rem!important;
+        padding: .25rem !important;
         position: relative;
-        
-        select{
+
+        select {
           outline: none;
           width: 100%;
           height: 100%;
@@ -264,7 +275,7 @@
           background: transparent;
           font-family: Averta;
           font-size: 1rem;
-          padding: .25rem!important;
+          padding: .25rem !important;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
@@ -276,6 +287,7 @@
           appearance: none;
         }
       }
+
       .custom-select__filter-table:after {
         content: "keyboard_arrow_down";
         font-family: "material icons";
@@ -302,7 +314,7 @@
 
               .media {
 
-                border-bottom: 1px solid #dee2e6!important;
+                border-bottom: 1px solid #dee2e6 !important;
                 border-radius: 3px;
                 padding-bottom: .5rem !important;
                 line-height: 1.1rem !important;
@@ -452,12 +464,15 @@
             }
           }
         }
-        tbody > tr:last-child > td > div { border-bottom: 1px solid transparent!important; }
+
+        tbody>tr:last-child>td>div {
+          border-bottom: 1px solid transparent !important;
+        }
       }
 
     }
 
-    
+
   }
 
   .pull-right {
@@ -465,9 +480,10 @@
       width: 248px;
       height: 30px;
       border-radius: 3px;
-    //   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+      //   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
       background-color: #f7f7f7;
-      .btn.btn-filter{
+
+      .btn.btn-filter {
         width: 30px;
         height: 30px;
         font-size: 12px;
