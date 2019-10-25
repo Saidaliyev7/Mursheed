@@ -125,8 +125,8 @@
 .filter-form{
     .card{
         background-color: #f7f7f7;
-        width: 16.4375rem;
-        height: 33.875rem;
+        // width: 16.4375rem;
+        height: 40.870rem;
         border-radius: 4px;
         .card-header{
             background-color: #f7f7f7;
@@ -237,6 +237,8 @@
 
   //   right table
   .card {
+    // width: 53rem;
+    height: 47rem;
     .card-header {
       &__title {
         width: 99px;
