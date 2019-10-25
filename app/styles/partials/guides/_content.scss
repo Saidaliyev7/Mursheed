@@ -18,7 +18,7 @@
       .home {
         width: 45px;
         height: 20px;
-        font-family: $font-family;
+        font-family: Averta-Regular;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
@@ -27,11 +27,13 @@
         color: #999999;
       }
 
-      .fas.fa-chevron-right {
-        width: 6px;
-        height: 10px;
+      .arrow-right {
         object-fit: contain;
         color: #999999;
+        
+      }
+      .material-icons{
+        font-size: 1rem;
       }
 
       .secondNav {
