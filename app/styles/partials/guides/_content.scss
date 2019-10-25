@@ -125,8 +125,8 @@
 .filter-form{
     .card{
         background-color: #f7f7f7;
-        width: 263px;
-        height: 651px;
+        width: 16.4375rem;
+        height: 33.875rem;
         border-radius: 4px;
         .card-header{
             background-color: #f7f7f7;
@@ -166,10 +166,64 @@
                         
                         .select-area{
                             border-bottom: 1px solid #dee2e6!important;
+
+                            .select-title h5:first-child{
+                              height:1.5rem ;
+                              font-family: Averta-Regular;
+                              font-size: 1rem;
+                              font-weight: normal;
+                              font-stretch: normal;
+                              font-style: normal;
+                              line-height: 1.25;
+                              letter-spacing: normal;
+                              color: $black;
+                            }
+
+                            .select-title h5:last-child{
+                              color: $deep-aqua;
+                            }
                         }
                       
                         // filter custom select
 
+                        .custom-select__filter-sidebar{
+                          width: 100%;
+                          height: 2.25rem;
+                          border-radius:0.25rem;
+                          border: solid 1px #dfdfdf;
+                          position: relative;
+                          
+                          select{
+                            outline: none;
+                            width: 100%;
+                            height: 100%;
+                            border: 0;
+                            background: transparent;
+                            font-family: Averta;
+                            font-size: 1rem;
+                            padding: .25rem!important;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            color: #666666;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                          }
+                        }
+                        .custom-select__filter-sidebar:after {
+                          content: "keyboard_arrow_down";
+                          font-family: "material icons";
+                          position: absolute;
+                          right: 0.625rem;
+                          top: 50%;
+                          font-size: 1rem;
+                          color: #000000;
+                          transform: translateY(-50%);
+                          pointer-events: none;
+                        }
 
                       
 
