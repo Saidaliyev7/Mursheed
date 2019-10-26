@@ -320,30 +320,25 @@
                     
 
                     .title{
-                      // width: 164px;
-                      // height: 24px;
+                      padding-top: 5px;
                       font-family: "Averta-Semibold";
-                      font-size: $font-size2;
+                      font-size: 1rem;
                       font-weight: 600;
                       color: var(--black);
                     }
                     
                     .times-tour {
-                      // width: 253px;
-                      // height: 20px;
                       font-family: "Averta-Regular";
-                      font-size: $font-size;
+                      font-size: $font-size - 0.3;
                       line-height: 1.25;
                       letter-spacing: normal;
                       color: var(--black);
                     }
 
                     .countries {
-                      // width: 253px;
-                      // height: 20px;
                       font-family: "Averta-Regular";
-                      font-size: $font-size;
-                      line-height: 1.25;
+                      font-size: $font-size - 0.1;
+                      line-height: 2;
                       letter-spacing: normal;
                       color: var(--black);
                     }

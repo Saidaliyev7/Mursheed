@@ -14,6 +14,29 @@
     margin-left: 1rem;
     align-items: flex-end;
   }
+
+   #card_image_main_left .card-main .title{
+    font-family: "Averta-Semibold";
+    font-size: $font-size2;
+    font-weight: 600;
+    color: var(--black);
+  }
+  
+   #card_image_main_left .card-main .times-tour{
+    font-family: "Averta-Regular";
+    font-size: $font-size;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+
+   #card_image_main_left .card-main .countries {
+    font-family: "Averta-Regular";
+    font-size: $font-size;
+    line-height: 2;
+    letter-spacing: normal;
+    color: var(--black);
+  }
   
 }
 
