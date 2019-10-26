@@ -6,9 +6,15 @@
 
 
 @media (max-width: 767px) {
-    // .card-header__title {
-    //     font-size: 1.125rem;
-    // }
+  .content {
+    .card.right-area-table {
+      .card-header {
+        &__title {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
 }
 
 
