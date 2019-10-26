@@ -236,8 +236,9 @@
   .card.right-area-table{
     
     border: 0!important;
-    height: 46.125rem;
+    height: min-content;
     background-color: $light;
+    margin-bottom: 1rem!important;
 
     .card-header {
 
@@ -302,8 +303,11 @@
           tbody {
             tr {
               td {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 1rem;
                 border: 0;
-                padding: 0;
+                border-bottom: solid 1px #dfdfdf;
                 .card{
 
                   background: transparent;
@@ -435,7 +439,7 @@
             }
           }
   
-          tbody>tr:last-child>td>div {
+          tbody>tr:last-child>td  {
             border-bottom: $border1px solid transparent !important;
           }
         }
