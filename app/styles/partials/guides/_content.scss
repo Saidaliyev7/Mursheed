@@ -343,6 +343,42 @@
                       color: var(--black);
                     }
 
+                    // .busy-avaiable-button {
+                    //   line-height: 2.3rem !important
+                    // }
+
+                    .busy-or-avaiable {
+                      border: 0;
+                      border-radius: 2px;
+                      color: #ffffff;
+                      text-align: center!important;
+                      width: 70px;
+                      height: 20px;
+                      font-family: "Averta-Regular";
+                      font-size: 10px;
+                      outline: none;
+                    }
+
+                    .busy {
+                      background-color: #b73838;
+                    }
+
+                    .avaiable {
+                      background-color: #38b77b;
+                    }
+
+                    .user {
+                      width: 17px;
+                      height: 20px;
+                      object-fit: contain;
+                      position: relative;
+                    }
+                    .user:after{
+                      content: url(../../../images/ico_guides/user.svg);
+                      position: absolute;
+                      margin-left: 1rem;
+                    }
+
                   }
                   
                 }
