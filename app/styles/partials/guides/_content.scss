@@ -306,6 +306,8 @@
                 padding: 0;
                 .card{
 
+                  background: transparent;
+                  border: 0;
                   display: flex;
                   flex-direction: column;
                   text-align: center;
@@ -386,8 +388,11 @@
                 .card.card-right-area{
 
                   display: flex;
-                  flex-direction: column;
-                  text-align: center;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  padding: 1rem;
+                  background: transparent;
+                  border: 0;
 
                   .ratings {
                     font-size: 12px;
@@ -397,27 +402,32 @@
                     font-size: 10px;
                   }
 
-                  .details__hire {
-                    width: 120px;
-                    height: 29px;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    text-align: center;
-                    font-family: "Averta-Bold";
-                    border: 0;
-                    border-radius: 3px;
-                  }
-
-                  .details {
-                    color: $deep-aqua;
-                    background-color: #ffffff;
-                    border: 1px solid;
-                  }
-
-                  .hire {
-                    color: #ffffff;
-                    background-color: $deep-aqua;
-
+                  .card-button{
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: space-around;
+                    .details__hire {
+                      // width: 120px;
+                      // height: 29px;
+                      font-size: 0.7rem;
+                      font-weight: 400;
+                      text-align: center;
+                      font-family: "Averta-Bold";
+                      border: 0;
+                      border-radius: 3px;
+                    }
+  
+                    .details {
+                      color: $deep-aqua;
+                      background-color: #ffffff;
+                      border: 1px solid;
+                    }
+  
+                    .hire {
+                      color: #ffffff;
+                      background-color: $deep-aqua;
+  
+                    }
                   }
                 }
                
