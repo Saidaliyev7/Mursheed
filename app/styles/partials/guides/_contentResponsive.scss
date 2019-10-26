@@ -3,18 +3,22 @@
     
   
 }
+@media (min-width:600px) {
 
-
-@media (max-width: 767px) {
-  .content {
-    .card.right-area-table {
-      .card-header {
-        &__title {
-          font-size: 1.125rem;
-        }
-      }
-    }
+  #card_image_main_left{
+    flex-direction: row;
   }
+
+  #card_image_main_left .card-main{
+    text-align-last: left;
+    margin-left: 1rem;
+    align-items: flex-end;
+  }
+  
+}
+
+@media (min-width: 600px) {
+  
 }
 
 

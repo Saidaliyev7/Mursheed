@@ -305,15 +305,59 @@
                 border: 0;
                 padding: 0;
                 .card{
+
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+
                   .card-image > img{
                     width: 6.375rem;
                     height: 6.375rem;
                   }
 
+                  .card-main{
+
+                    
+
+                    .title{
+                      // width: 164px;
+                      // height: 24px;
+                      font-family: "Averta-Semibold";
+                      font-size: $font-size2;
+                      font-weight: 600;
+                      color: var(--black);
+                    }
+                    
+                    .times-tour {
+                      // width: 253px;
+                      // height: 20px;
+                      font-family: "Averta-Regular";
+                      font-size: $font-size;
+                      line-height: 1.25;
+                      letter-spacing: normal;
+                      color: var(--black);
+                    }
+
+                    .countries {
+                      // width: 253px;
+                      // height: 20px;
+                      font-family: "Averta-Regular";
+                      font-size: $font-size;
+                      line-height: 1.25;
+                      letter-spacing: normal;
+                      color: var(--black);
+                    }
+
+                  }
                   
                 }
   
-                
+                .card.card-right-area{
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                }
+               
               }
             }
           }
