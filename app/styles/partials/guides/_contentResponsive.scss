@@ -8,7 +8,7 @@
     
   
 }
-@media (min-width:600px) {
+@media (min-width:768px) {
 
   #card_image_main_left{
     flex-direction: row;
@@ -17,7 +17,7 @@
   }
 
   #card_image_main_left .card-main{
-    text-align-last: left;
+    text-align: left;
     margin-left: 1rem;
     align-items: flex-end;
   }
