@@ -23,263 +23,480 @@
   <!-- endbuild -->
 
 </head>
+
 <body>
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<!--header-->
-<!--header-->
+  <!--header-->
+  <!--header-->
   <!--region content-->
-    <section class="content">
-      <div class="container">
-        <!--#region current-page-->
-        <div class="row no-gutters">
-          <div class="col-lg-12">
-            <div class="current-page">
-              <ul class="align-items-center pb-3 pt-3">
-                <li class="mr-2"><a class="home" href="#">Home</a></li>
-                <li class="mr-2">
-                  <span class="arrow-right"><i class="material-icons ">keyboard_arrow_right</i></span>
-                  </li>
-                <li><a class="secondNav" href="#">Guides & Drivers</a></li>
-              </ul>
-            </div>
+  <section class="content">
+    <div class="container">
+      <!--#region current-page-->
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="current-page">
+            <ul class="align-items-center pb-3 pt-3">
+              <li class="mr-2"><a class="home" href="#">Home</a></li>
+              <li class="mr-2">
+                <span class="arrow-right"><i class="material-icons ">keyboard_arrow_right</i></span>
+              </li>
+              <li><a class="secondNav" href="#">Guides & Drivers</a></li>
+            </ul>
           </div>
-        </div>
-        <!--#endregion current-page-->
-        <div class="row">
-          <!--#region left-area filter sideBar-->
-          <div class="col-lg-3">
-            <div class="row no-gutters">
-              <div class="col-lg-12">
-                <!-- radio button -->
-                  <div class="radio-button-area mb-4">
-                      <div class="card">
-                          <div class="card-body">
-                            <div class="radio-group">
-                              <div class="radio-group">
-                                <form>
-                                  <ul>
-                                    <li><label class="radio">
-                                        <input type="radio" id="driver" value="driver" name="optradio">Driver
-                                        <span></span>
-                                      </label>
-                                    </li>
-                                    <li>
-                                      <label class="radio">
-                                        <input type="radio" id="guides" value="guides" name="optradio" checked>Guides
-                                        <span></span>
-                                      </label>
-                                    </li>
-                                  </ul>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                          </div>
-                  </div>
-                <!-- radio button -->
-                <!-- filter form -->
-                <div class="filter-form mb-4">
-                    <div class="card border-0">
-                        <form action="">
-                            <div class="card-header d-flex justify-content-between align-items-center">
-                                <h4 class="title">Filter</h4>
-                                <a href="#" class="reset">reset</a>
-                              </div>
-                              <div class="card-body">
-                                <div class="guides-select-form">
-                                  <ul>
-                                    <!-- select2 by city -->
-                                     <li>
-                                        <div class="select-area pb-3">
-                                            <div class="pb-2 select-title align-items-center d-flex justify-content-between">
-                                                <h5>By city</h5>
-                                                <h5><i class="fas fa-minus"></i></h5>
-                                            </div>
-                                            <div class="custom-select__filter-sidebar">
-                                                <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
-                                                  <option value="">All city</option>
-                                                  <option value="">Filter 1</option>
-                                                  <option value="">Filter 2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                      </li>
-                                     <!-- select2 -->
-
-
-                                   
-      
-                                    <!-- by language -->
-                                    <li>
-                                        <div class="select-area pb-3">
-                                            <div class="pb-2 select-title align-items-center d-flex justify-content-between">
-                                                <h5>By language</h5>
-                                                <h5><i class="fas fa-minus"></i></h5>
-                                            </div>
-                                            <div class="custom-select__filter-sidebar">
-                                                <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
-                                                  <option value="">All Language</option>
-                                                  <option value="">Filter 1</option>
-                                                  <option value="">Filter 2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                      </li>
-                                      <!-- by language -->
-      
-                                      <!-- by gender -->
-                                      <li>
-                                        <div class="select-area pb-3">
-                                          <div class="pb-2 select-title align-items-center d-flex justify-content-between">
-                                            <h5>By gender</h5>
-                                            <h5><i class="fas fa-minus"></i></h5>
-                                          </div>
-                                          <div class="custom-select__filter-sidebar">
-                                              <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
-                                                <option value="">All gender</option>
-                                                <option value="">Filter 1</option>
-                                                <option value="">Filter 2</option>
-                                              </select>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <!-- by gender -->
-                                      <!-- by gender -->
-                                      <li>
-                                          <div class="select-area pb-3">
-                                            <div class="pb-2 select-title align-items-center d-flex justify-content-between">
-                                              <h5>By availability</h5>
-                                              <h5><i class="fas fa-minus"></i></h5>
-                                            </div>
-                                            <div class="custom-select__filter-sidebar">
-                                                <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
-                                                  <option value="">All</option>
-                                                  <option value="">Filter 1</option>
-                                                  <option value="">Filter 2</option>
-                                                </select>
-                                            </div>
-                                          </div>
-                                        </li>
-                                        <!-- by gender -->
-                                  </ul>
-                                </div>
-                              </div>
-                        </form>
-                      </div>
-                </div>
-                <!-- filter form -->
-              </div>
-            </div>
-          </div>
-          <!--#endregion left-area filter sideBar-->
-          <!--region right-area table-->
-          <div class="col-lg-9">
-            <div class="row no-gutters">
-              <div class="col-lg-12">
-                <div class="card right-area-table">
-                  <div class="card-header align-items-center card-header d-flex justify-content-between">
-                    <h4 class="card-header__title"> Guides (12)</h4>
-                    <div class="custom-select__filter-table">
-                      <select  name="" id="">
-                        <option value="">Filter</option>
-                        <option value="">Filter 1</option>
-                        <option value="">Filter 2</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="card-body border-0">
-                    <div class="table-container">
-                      <table class="table">
-                        <tbody>
-                          <!-- items -->
-                          <tr>
-                            <td>
-                              <div class="align-items-end no-gutters row">
-                                <div class="col-lg-6 ">
-                                  <div id="card_image_main_left" class="card">
-                                    <div class="card-image">
-                                      <img src="images/guides/g4.png" class="media-photo">
-                                    </div>
-                                    <!-- left area -->
-                                    <div class="card-main ">
-                                        <h4 class="title">Alexa Richardson</h4>
-                                        <span class="times-tour">120 times tour</span>
-                                        <p class="countries">English, Spain, Turkey, Azerbaijani</p>
-                                        <!-- busy or avaiable buttons -->
-                                        <div class="busy-avaiable-button">
-                                          <button class="busy busy-or-avaiable"><span>Busy</span></button>
-                                          <span class="user"></span>
-                                        </div>
-                                        <!-- busy or avaiable buttons -->
-                                    </div>
-                                    <!-- left area -->
-                                  </div>
-                                </div>
-                                <div class="col-lg-6 ">
-                                  <div id="card_star_details_hire" class="card card-right-area">
-                                      <!-- right area -->
-                                      <!-- ratings -->
-                                      <div class="rating">
-                                        <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
-                                            srcset=""></span>
-                                        <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
-                                            srcset=""></span>
-                                        <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
-                                            srcset=""></span>
-                                        <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
-                                            srcset=""></span>
-                                        <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
-                                            srcset=""></span>
-                                        <span class="ratings-count">(23)</span>
-                                      </div>
-                                      <!-- ratings -->
-                                      <div class="card-button">
-                                          <button class="details__hire details">Details</button>
-                                          <button class="details__hire hire">Hire</button>
-                                      </div>
-                                      <!-- right area -->
-                                  </div>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <!-- items -->
-
-                        </tbody>
-                      </table>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="justify-content-end no-gutters row">
-                    <div class="pull-right">
-                      <div class="btn-group">
-                        <button type="button" class="btn  btn-filter" data-target="left"><i
-                            class="fa fa-chevron-left"></i></button>
-                        <button type="button" class="btn  btn-filter" data-target="1">1</button>
-                        <button type="button" class="btn  btn-filter" data-target="2">2</button>
-                        <button type="button" class="btn  btn-filter" data-target="3">3</button>
-                        <button type="button" class="btn  btn-filter" data-target="4">4</button>
-                        <button type="button" class="btn  btn-filter" data-target="5">...</button>
-                        <button type="button" class="btn  btn-filter" data-target="8">8</button>
-                        <button type="button" class="btn  btn-filter" data-target="right"><i
-                            class="fa fa-chevron-right"></i></button>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <!--#endregion right-area table-->
         </div>
       </div>
-    </section>
+      <!--#endregion current-page-->
+      <div class="row">
+        <!--#region left-area filter sideBar-->
+        <div class="col-lg-3">
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+              <!-- radio button -->
+              <div class="radio-button-area mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="radio-group">
+                      <div class="radio-group">
+                        <form>
+                          <ul>
+                            <li><label class="radio">
+                                <input type="radio" id="driver" value="driver" name="optradio">Driver
+                                <span></span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="radio">
+                                <input type="radio" id="guides" value="guides" name="optradio" checked>Guides
+                                <span></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- radio button -->
+              <!-- filter form -->
+              <div class="filter-form mb-4">
+                <div class="card border-0">
+                  <form action="">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h4 class="title">Filter</h4>
+                      <a href="#" class="reset">reset</a>
+                    </div>
+                    <div class="card-body">
+                      <div class="guides-select-form">
+                        <ul>
+                          <!-- select2 by city -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By city</h5>
+                                <h5><i class="fas fa-minus"></i></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All city</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- select2 -->
+
+
+
+
+                          <!-- by language -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By language</h5>
+                                <h5><i class="fas fa-minus"></i></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All Language</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- by language -->
+
+                          <!-- by gender -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By gender</h5>
+                                <h5><i class="fas fa-minus"></i></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All gender</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- by gender -->
+                          <!-- by gender -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By availability</h5>
+                                <h5><i class="fas fa-minus"></i></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- by gender -->
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- filter form -->
+            </div>
+          </div>
+        </div>
+        <!--#endregion left-area filter sideBar-->
+        <!--region right-area table-->
+        <div class="col-lg-9">
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+              <div class="card right-area-table">
+                <div class="card-header align-items-center card-header d-flex justify-content-between">
+                  <h4 class="card-header__title"> Guides (12)</h4>
+                  <div class="custom-select__filter-table">
+                    <select name="" id="">
+                      <option value="">Filter</option>
+                      <option value="">Filter 1</option>
+                      <option value="">Filter 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-body border-0">
+                  <div class="table-container">
+                    <table class="table">
+                      <tbody>
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-lg-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button">
+                                      <button class="busy busy-or-avaiable"><span>Busy</span></button>
+                                      <span class="user"></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-lg-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button">
+                                      <button class="avaiable busy-or-avaiable"><span>Busy</span></button>
+                                      <span class="user"></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-lg-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button">
+                                      <button class="busy busy-or-avaiable"><span>Busy</span></button>
+                                      <span class="user"></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-lg-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button">
+                                      <button class="avaiable busy-or-avaiable"><span>Busy</span></button>
+                                      <span class="user"></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-lg-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button">
+                                      <button class="avaiable busy-or-avaiable"><span>Busy</span></button>
+                                      <span class="user"></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-lg-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+              <div class="justify-content-end no-gutters row">
+                <div class="pull-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn  btn-filter" data-target="left"><i
+                        class="fa fa-chevron-left"></i></button>
+                    <button type="button" class="btn  btn-filter" data-target="1">1</button>
+                    <button type="button" class="btn  btn-filter" data-target="2">2</button>
+                    <button type="button" class="btn  btn-filter" data-target="3">3</button>
+                    <button type="button" class="btn  btn-filter" data-target="4">4</button>
+                    <button type="button" class="btn  btn-filter" data-target="5">...</button>
+                    <button type="button" class="btn  btn-filter" data-target="8">8</button>
+                    <button type="button" class="btn  btn-filter" data-target="right"><i
+                        class="fa fa-chevron-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--#endregion right-area table-->
+      </div>
+    </div>
+  </section>
   <!--#endregion content-->
   <!--footer-->
   <footer>
-    
+
   </footer>
   <!--footer-->
   <!-- Optional JavaScript -->
