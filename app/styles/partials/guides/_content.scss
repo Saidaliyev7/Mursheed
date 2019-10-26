@@ -384,12 +384,13 @@
                       height: 20px;
                       object-fit: contain;
                       position: relative;
+                      display: flex;
                     }
-                    .user:after{
-                      content: url(../../../images/ico_guides/user.svg);
-                      position: absolute;
-                      margin-left: 1rem;
-                    }
+                    // .user:after{
+                    //   content: url(../../../images/ico_guides/user.svg);
+                    //   position: absolute;
+                    //   margin-left: 1rem;
+                    // }
 
                   }
                   
