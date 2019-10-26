@@ -10,7 +10,8 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place your kit's code here -->
-  <script src="https://kit.fontawesome.com/1baa505c3a.js" crossorigin="anonymous"></script>
+  <script src="scripts/fontawesome.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -28,7 +29,7 @@
     <![endif]-->
 <!--header-->
 <!--header-->
-  <!--#region content-->
+  <!--region content-->
     <section class="content">
       <div class="container">
         <!--#region current-page-->
@@ -47,7 +48,7 @@
         </div>
         <!--#endregion current-page-->
         <div class="row">
-          <!--#region left-area filter sideBar-->
+          <!--region left-area filter sideBar-->
           <div class="col-lg-3">
             <div class="row no-gutters">
               <div class="col-lg-12">
@@ -89,23 +90,26 @@
                               <div class="card-body">
                                 <div class="guides-select-form">
                                   <ul>
-                                    <!-- by city -->
-                                    <li>
-                                      <div class="select-area pb-3">
-                                          <div class="pb-2 select-title align-items-center d-flex justify-content-between">
-                                              <h5>By city</h5>
-                                              <h5><i class="fas fa-minus"></i></h5>
-                                          </div>
-                                          <div class="custom-select__filter-sidebar">
-                                              <select name="" id="">
-                                                <option value="">All city</option>
-                                                <option value="">Filter 1</option>
-                                                <option value="">Filter 2</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                    </li>
-                                    <!-- by city -->
+                                    <!-- select2 by city -->
+                                     <li>
+                                        <div class="select-area pb-3">
+                                            <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                                <h5>By city</h5>
+                                                <h5><i class="fas fa-minus"></i></h5>
+                                            </div>
+                                            <div class="custom-select__filter-sidebar">
+                                                <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
+                                                  <option value="">All city</option>
+                                                  <option value="">Filter 1</option>
+                                                  <option value="">Filter 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                      </li>
+                                     <!-- select2 -->
+
+
+                                   
       
                                     <!-- by language -->
                                     <li>
@@ -115,7 +119,7 @@
                                                 <h5><i class="fas fa-minus"></i></h5>
                                             </div>
                                             <div class="custom-select__filter-sidebar">
-                                                <select name="" id="">
+                                                <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
                                                   <option value="">All Language</option>
                                                   <option value="">Filter 1</option>
                                                   <option value="">Filter 2</option>
@@ -133,7 +137,7 @@
                                             <h5><i class="fas fa-minus"></i></h5>
                                           </div>
                                           <div class="custom-select__filter-sidebar">
-                                              <select name="" id="">
+                                              <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
                                                 <option value="">All gender</option>
                                                 <option value="">Filter 1</option>
                                                 <option value="">Filter 2</option>
@@ -150,7 +154,7 @@
                                               <h5><i class="fas fa-minus"></i></h5>
                                             </div>
                                             <div class="custom-select__filter-sidebar">
-                                                <select name="" id="">
+                                                <select class="select2-custom" data-width="100%" data-minimum-results-for-search="Infinity" name="" id="">
                                                   <option value="">All</option>
                                                   <option value="">Filter 1</option>
                                                   <option value="">Filter 2</option>
@@ -178,7 +182,7 @@
                   <div class="card-header align-items-center card-header d-flex justify-content-between">
                     <h4 class="card-header__title"> Guides (12)</h4>
                     <div class="custom-select__filter-table">
-                      <select name="" id="">
+                      <select  name="" id="">
                         <option value="">Filter</option>
                         <option value="">Filter 1</option>
                         <option value="">Filter 2</option>
@@ -328,6 +332,10 @@
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
+
+  <!-- select2 -->
+  <script src="../bower_components/select2/dist/js/select2.min.js"></script>
+  <script src="scripts/custom_select.js"></script>
 
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
