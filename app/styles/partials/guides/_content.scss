@@ -384,9 +384,41 @@
                 }
   
                 .card.card-right-area{
+
                   display: flex;
                   flex-direction: column;
                   text-align: center;
+
+                  .ratings {
+                    font-size: 12px;
+                  }
+
+                  .ratings-count {
+                    font-size: 10px;
+                  }
+
+                  .details__hire {
+                    width: 120px;
+                    height: 29px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    font-family: "Averta-Bold";
+                    border: 0;
+                    border-radius: 3px;
+                  }
+
+                  .details {
+                    color: $deep-aqua;
+                    background-color: #ffffff;
+                    border: 1px solid;
+                  }
+
+                  .hire {
+                    color: #ffffff;
+                    background-color: $deep-aqua;
+
+                  }
                 }
                
               }
