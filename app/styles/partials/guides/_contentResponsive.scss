@@ -7,6 +7,8 @@
 
   #card_image_main_left{
     flex-direction: row;
+    background: transparent;
+    border: 0;
   }
 
   #card_image_main_left .card-main{
@@ -45,6 +47,8 @@
     // justify-content: space-between;
     padding: 0;
     align-items: flex-end;
+    background: transparent;
+    border: 0;
   }
 
   #card_star_details_hire .card-button{
