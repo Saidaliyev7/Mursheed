@@ -226,11 +226,17 @@
 
               }
             }
+
+            ul li:last-child .select-area {
+              border-bottom: $border1px solid transparent !important;
+            }
           }
         }
       }
     }
   }
+
+  
 
   //   right table
   .card.right-area-table{
